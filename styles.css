@@ -1,0 +1,756 @@
+/* ============================================
+   GICHURU MEMORIAL SECONDARY SCHOOL
+   Custom Styles & Animations
+   ============================================ */
+
+/* CSS Variables - School Colors */
+:root {
+  --primary-green: #1A3923;
+  --electric-yellow: #F2F52C;
+  --cloud-blue: #CBDEE5;
+  --pure-black: #000000;
+  --white: #FFFFFF;
+
+  /* Gradients */
+  --green-gradient: linear-gradient(135deg, #1A3923 0%, #2d5a3a 100%);
+  --yellow-glow: 0 0 20px rgba(242, 245, 44, 0.6);
+  --whatsapp-glow: 0 0 30px rgba(37, 211, 102, 0.8);
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--pure-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Navigation */
+.navbar {
+  background: var(--primary-green);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--electric-yellow);
+  border-bottom-color: var(--electric-yellow);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  border-bottom-color: var(--electric-yellow);
+}
+
+/* Dropdown Menu */
+.nav-menu li {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--primary-green);
+  list-style: none;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 2000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Fix for last dropdown going off screen */
+.nav-menu>li:nth-last-child(2) .dropdown-menu,
+.nav-menu>li:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(242, 245, 44, 0.1);
+  color: var(--electric-yellow);
+  padding-left: 2rem;
+}
+
+.dropdown>.nav-link::after {
+  content: ' ▾';
+  font-size: 0.8em;
+}
+
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--primary-green);
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-menu.active {
+    max-height: 800px;
+  }
+
+  .nav-link {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Mobile Dropdown */
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 500px;
+  }
+
+  .dropdown-menu a {
+    padding-left: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-menu a:hover {
+    padding-left: 3rem;
+  }
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(26, 57, 35, 0.9), transparent);
+  padding: 3rem 2rem;
+  color: var(--white);
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--white);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.carousel-btn:hover {
+  background: var(--electric-yellow);
+  border-color: var(--electric-yellow);
+  color: var(--primary-green);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 400px;
+  }
+
+  .carousel-overlay {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Animated Cards */
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--cloud-blue);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: var(--electric-yellow);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--primary-green);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--electric-yellow);
+  color: var(--primary-green);
+  transform: translateY(-2px);
+  box-shadow: var(--yellow-glow);
+}
+
+.btn-secondary {
+  background: var(--electric-yellow);
+  color: var(--primary-green);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-green);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease;
+  animation: whatsappGlow 2s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes whatsappGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.6),
+      0 0 40px rgba(37, 211, 102, 0.4),
+      0 0 60px rgba(37, 211, 102, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(37, 211, 102, 0.8),
+      0 0 60px rgba(37, 211, 102, 0.6),
+      0 0 90px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+/* Facebook - Official Blue */
+.social-icon:nth-child(1) {
+  background: #1877F2;
+}
+
+.social-icon:nth-child(1):hover {
+  background: #145dbf;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* X (Twitter) - Black */
+.social-icon:nth-child(2) {
+  background: #000000;
+}
+
+.social-icon:nth-child(2):hover {
+  background: #1a1a1a;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* YouTube - Red */
+.social-icon:nth-child(3) {
+  background: #FF0000;
+}
+
+.social-icon:nth-child(3):hover {
+  background: #cc0000;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Instagram - Gradient */
+.social-icon:nth-child(4) {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon:nth-child(4):hover {
+  background: linear-gradient(45deg, #d67d2e 0%, #c75a33 25%, #b8223a 50%, #a81e5a 75%, #9a1476 100%);
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* TikTok - Black with cyan accent */
+.social-icon:nth-child(5) {
+  background: #000000;
+}
+
+.social-icon:nth-child(5):hover {
+  background: #00f2ea;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-icon:nth-child(5):hover svg {
+  fill: #000000;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  display: block;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Container & Grid */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tender Table - Responsive */
+.tender-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tender-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.tender-table th {
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.tender-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--cloud-blue);
+}
+
+.tender-table tr:hover {
+  background: rgba(203, 222, 229, 0.3);
+}
+
+/* Mobile: Switch to Cards */
+@media (max-width: 768px) {
+  .tender-table-wrapper {
+    display: none;
+  }
+
+  .tender-cards {
+    display: block;
+  }
+}
+
+.tender-cards {
+  display: none;
+}
+
+.tender-card {
+  background: var(--white);
+  border: 2px solid var(--cloud-blue);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tender-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--cloud-blue);
+}
+
+.tender-card-row:last-child {
+  border-bottom: none;
+}
+
+.tender-card-label {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: var(--electric-yellow);
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--electric-yellow);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Loading Spinner */
+.loading {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--cloud-blue);
+  border-top-color: var(--primary-green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-green);
+}
+
+.text-yellow {
+  color: var(--electric-yellow);
+}
+
+.bg-light {
+  background: var(--cloud-blue);
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}

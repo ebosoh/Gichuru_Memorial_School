@@ -1,0 +1,39 @@
+<!-- Placeholder SVG for Hero Image 1 - School Building -->
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3923;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a3a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="600" fill="url(#grad1)"/>
+  
+  <!-- School Building Silhouette -->
+  <rect x="600" y="200" width="720" height="300" fill="#0d1f12" opacity="0.6"/>
+  <polygon points="600,200 960,100 1320,200" fill="#0d1f12" opacity="0.6"/>
+  
+  <!-- Windows -->
+  <rect x="650" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  <rect x="770" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  <rect x="890" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  <rect x="1010" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  <rect x="1130" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  <rect x="1250" y="250" width="80" height="100" fill="#F2F52C" opacity="0.3"/>
+  
+  <!-- Door -->
+  <rect x="900" y="380" width="120" height="120" fill="#0d1f12" opacity="0.8"/>
+  
+  <!-- Trees -->
+  <circle cx="400" cy="350" r="80" fill="#2d5a3a" opacity="0.5"/>
+  <rect x="385" y="350" width="30" height="150" fill="#1A3923" opacity="0.5"/>
+  
+  <circle cx="1520" cy="350" r="80" fill="#2d5a3a" opacity="0.5"/>
+  <rect x="1505" y="350" width="30" height="150" fill="#1A3923" opacity="0.5"/>
+  
+  <!-- Text -->
+  <text x="960" y="550" font-family="Arial, sans-serif" font-size="48" fill="#CBDEE5" text-anchor="middle" font-weight="bold">
+    Gichuru Memorial Secondary School
+  </text>
+</svg>

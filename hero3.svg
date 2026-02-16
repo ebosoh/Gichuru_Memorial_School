@@ -1,0 +1,52 @@
+<!-- Placeholder SVG for Hero Image 3 - Sports Activities -->
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90A4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="1920" height="400" fill="url(#grad3)"/>
+  
+  <!-- Ground -->
+  <rect y="400" width="1920" height="200" fill="#2d5a3a"/>
+  
+  <!-- Football Field Lines -->
+  <rect x="400" y="420" width="1120" height="160" fill="#1A3923" opacity="0.3"/>
+  <line x1="960" y1="420" x2="960" y2="580" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="960" cy="500" r="60" fill="none" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Goal Posts -->
+  <rect x="380" y="450" width="15" height="100" fill="#F2F52C"/>
+  <rect x="380" y="450" width="80" height="15" fill="#F2F52C"/>
+  <rect x="445" y="450" width="15" height="100" fill="#F2F52C"/>
+  
+  <rect x="1525" y="450" width="15" height="100" fill="#F2F52C"/>
+  <rect x="1460" y="450" width="80" height="15" fill="#F2F52C"/>
+  <rect x="1460" y="450" width="15" height="100" fill="#F2F52C"/>
+  
+  <!-- Football -->
+  <circle cx="900" cy="480" r="25" fill="#ffffff"/>
+  <path d="M 890 480 L 910 480 M 900 470 L 900 490" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Student Figures (simplified) -->
+  <circle cx="800" cy="470" r="20" fill="#1A3923"/>
+  <rect x="790" y="490" width="20" height="40" fill="#F2F52C"/>
+  <rect x="785" y="500" width="10" height="30" fill="#1A3923"/>
+  <rect x="805" y="500" width="10" height="30" fill="#1A3923"/>
+  
+  <circle cx="1100" cy="480" r="20" fill="#1A3923"/>
+  <rect x="1090" y="500" width="20" height="40" fill="#F2F52C"/>
+  <rect x="1085" y="510" width="10" height="30" fill="#1A3923"/>
+  <rect x="1105" y="510" width="10" height="30" fill="#1A3923"/>
+  
+  <!-- Sun -->
+  <circle cx="200" cy="120" r="60" fill="#F2F52C" opacity="0.8"/>
+  
+  <!-- Text -->
+  <text x="960" y="370" font-family="Arial, sans-serif" font-size="48" fill="#1A3923" text-anchor="middle" font-weight="bold">
+    Sports &amp; Physical Education
+  </text>
+</svg>

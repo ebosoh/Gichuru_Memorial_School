@@ -1,0 +1,43 @@
+<!-- Placeholder SVG for Hero Image 2 - Students Learning -->
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#CBDEE5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8c5d1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="600" fill="url(#grad2)"/>
+  
+  <!-- Classroom -->
+  <rect x="200" y="100" width="1520" height="400" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Blackboard -->
+  <rect x="300" y="150" width="600" height="300" fill="#1A3923"/>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="36" fill="#F2F52C" text-anchor="middle" font-weight="bold">
+    CBC Education
+  </text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="28" fill="#CBDEE5" text-anchor="middle">
+    Excellence in Learning
+  </text>
+  
+  <!-- Desks (simplified) -->
+  <rect x="1000" y="250" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  <rect x="1150" y="250" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  <rect x="1300" y="250" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  
+  <rect x="1000" y="360" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  <rect x="1150" y="360" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  <rect x="1300" y="360" width="120" height="80" fill="#8B4513" opacity="0.7"/>
+  
+  <!-- Books on desks -->
+  <rect x="1020" y="240" width="30" height="8" fill="#F2F52C"/>
+  <rect x="1170" y="240" width="30" height="8" fill="#1A3923"/>
+  <rect x="1320" y="240" width="30" height="8" fill="#F2F52C"/>
+  
+  <!-- Window -->
+  <rect x="1500" y="150" width="180" height="250" fill="#87CEEB" opacity="0.5"/>
+  <line x1="1590" y1="150" x2="1590" y2="400" stroke="#666" stroke-width="3"/>
+  <line x1="1500" y1="275" x2="1680" y2="275" stroke="#666" stroke-width="3"/>
+</svg>
