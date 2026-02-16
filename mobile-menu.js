@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close menu when clicking a link
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
+    navMenu.querySelectorAll('.nav-link, .dropdown-menu a').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
             menuToggle.classList.remove('active');
@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dropdownLink && window.innerWidth <= 768) {
             dropdownLink.addEventListener('click', (e) => {
                 e.preventDefault();
+                e.stopPropagation();
                 dropdown.classList.toggle('active');
             });
         }
