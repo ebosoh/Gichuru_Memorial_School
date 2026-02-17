@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         animateOnScroll.observe(card);
     });
 
+    // Process logo backgrounds to remove white
+    processLogoBackgrounds();
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -54,3 +57,54 @@ window.observeNewCards = function () {
         animateOnScroll.observe(card);
     });
 };
+
+/**
+ * Dynamically removes white background from logo images
+ * using HTML5 Canvas pixel manipulation.
+ */
+function processLogoBackgrounds() {
+    const logos = document.querySelectorAll('.nav-logo, .footer-logo');
+
+    logos.forEach(logoImg => {
+        if (logoImg.complete) {
+            handleLogoProcessing(logoImg);
+        } else {
+            logoImg.addEventListener('load', () => handleLogoProcessing(logoImg));
+        }
+    });
+}
+
+function handleLogoProcessing(imgElement) {
+    if (imgElement.dataset.processed) return;
+
+    try {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const width = imgElement.naturalWidth;
+        const height = imgElement.naturalHeight;
+
+        canvas.width = width;
+        canvas.height = height;
+        ctx.drawImage(imgElement, 0, 0);
+
+        const imageData = ctx.getImageData(0, 0, width, height);
+        const data = imageData.data;
+
+        for (let i = 0; i < data.length; i += 4) {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+            if (r > 240 && g > 240 && b > 240) {
+                data[i + 3] = 0;
+            }
+        }
+
+        ctx.putImageData(imageData, 0, 0);
+        imgElement.src = canvas.toDataURL('image/png');
+        imgElement.dataset.processed = 'true';
+        imgElement.classList.add('logo-processed');
+    } catch (e) {
+        console.warn('Logo processing failed (likely CORS or file protocol):', e);
+        imgElement.classList.add('logo-processed');
+    }
+}

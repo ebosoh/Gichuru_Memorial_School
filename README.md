@@ -1,4 +1,4 @@
-# Gichuru Memorial Secondary School Website
+# Gichuru Memorial Senior School Website
 
 A professional, mobile-first website built with vanilla HTML/CSS/JavaScript and Google Sheets as a headless CMS.
 
@@ -184,4 +184,4 @@ For issues or questions:
 
 ## 📄 License
 
-© 2026 Gichuru Memorial Secondary School. All rights reserved.
+© 2026 Gichuru Memorial Senior School. All rights reserved.

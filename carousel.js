@@ -88,10 +88,21 @@ class HeroCarousel {
         const slide = this.slides[index];
         if (!slide) return;
 
-        const img = slide.querySelector('img[data-src]');
-        if (img && img.dataset.src) {
-            img.src = img.dataset.src;
+        const img = slide.querySelector('img');
+        if (!img) return;
+
+        let src = '';
+        if (img.dataset.src) {
+            src = img.dataset.src;
+            img.src = src;
             img.removeAttribute('data-src');
+        } else if (img.src) {
+            src = img.src;
+        }
+
+        if (src) {
+            // Set background image on the slide for the blur effect
+            slide.style.backgroundImage = `url('${src}')`;
         }
     }
 

@@ -1,4 +1,4 @@
-<!-- Placeholder SVG for Hero Image 2 - Students Learning -->
+﻿<!-- Placeholder SVG for Hero Image 2 - Students Learning -->
 <svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -14,7 +14,7 @@
   <rect x="200" y="100" width="1520" height="400" fill="#ffffff" opacity="0.9"/>
   
   <!-- Blackboard -->
-  <rect x="300" y="150" width="600" height="300" fill="#1A3923"/>
+  <rect x="300" y="150" width="600" height="300" fill="#0A73CE"/>
   <text x="600" y="280" font-family="Arial, sans-serif" font-size="36" fill="#F2F52C" text-anchor="middle" font-weight="bold">
     CBC Education
   </text>
@@ -33,7 +33,7 @@
   
   <!-- Books on desks -->
   <rect x="1020" y="240" width="30" height="8" fill="#F2F52C"/>
-  <rect x="1170" y="240" width="30" height="8" fill="#1A3923"/>
+  <rect x="1170" y="240" width="30" height="8" fill="#0A73CE"/>
   <rect x="1320" y="240" width="30" height="8" fill="#F2F52C"/>
   
   <!-- Window -->
