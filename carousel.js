@@ -10,7 +10,7 @@ class HeroCarousel {
         this.slides = this.container.querySelectorAll('.carousel-slide');
         this.currentSlide = 0;
         this.autoPlayInterval = options.autoPlayInterval || 5000;
-        this.isPlaying = true;
+        this.isPlaying = false;
         this.timer = null;
 
         this.init();
