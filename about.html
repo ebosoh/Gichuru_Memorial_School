@@ -4,299 +4,808 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story | Amani Sewak Plastics Limited</title>
     <meta name="description"
-        content="From Nakuru to Nationwide. Learn how Amani Sewak Plastics became Kenya's most trusted water tank manufacturer.">
+        content="Learn about Gichuru Memorial Senior School - our history, management, chapel, and photo gallery.">
+    <title>About Us - Gichuru Memorial Senior School</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="glass.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Top Bar & Nav (Identical to Index) -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <span>📞 0737 902222 (Sales)</span>
-                <span style="margin-left: 1rem;">📍 Nakuru, Kenya</span>
-            </div>
-            <div class="language-toggle">
-                <span>EN</span> | <span style="opacity: 0.7; cursor: pointer;">SW</span>
-            </div>
-        </div>
-    </div>
-
-    <header class="glass-nav">
-        <div class="container nav-container">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="Amani Sewak Plastics Limited" style="height: 120px;">
+                <img src="logo.png" alt="Gichuru Memorial School Logo" class="nav-logo">
             </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="text-primary">Our Story</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="csr.html">CSR & Eco</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="contact.html" class="btn btn-accent" style="margin-left: 1rem;">Get Free Quote</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">Overview</a></li>
+                        <li><a href="description.html">Description of the School</a></li>
+                        <li><a href="about.html#management">The Management</a></li>
+                        <li><a href="about.html#chapel">The Chapel</a></li>
+                        <li><a href="about.html#gallery">Photo Gallery</a></li>
+                        <li><a href="uniform.html">School Uniform</a></li>
+                        <li><a href="assessment.html">Teaching/Learning Assessment</a></li>
+                    </ul>
                 </li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="dropdown">
+                    <a href="departments.html" class="nav-link">Departments</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="departments.html">All Departments</a></li>
+                        <li><a href="library.html">Library</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="clubs.html">Clubs & Societies</a></li>
+                        <li><a href="accommodation.html">Accommodation</a></li>
+                        <li><a href="sports.html">Games & Sports</a></li>
+                        <li><a href="welfare.html">Student Welfare</a></li>
+                        <li><a href="counseling.html">Guidance & Counseling</a></li>
+                        <li><a href="ict.html">ICT Department</a></li>
+                        <li><a href="labs.html">Science Laboratories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="finance.html" class="nav-link">Finance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="finance.html#tenders">Tenders</a></li>
+                        <li><a href="finance.html#fees">Fee Payment</a></li>
+                        <li><a href="finance.html#donate">Donations</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="https://wa.me/254790268040" target="_blank" class="nav-link whatsapp-nav-icon"
+                        aria-label="WhatsApp"><img src="whatsapp.png" alt="WhatsApp" loading="lazy"></a></li>
             </ul>
+        </div>
+    </nav>
 
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <!-- Page Header -->
+    <section class="section bg-light" style="padding: 0;">
+        <div class="container" style="padding: 0; max-width: 100%;">
+            <div style="position: relative; height: 500px; overflow: hidden;">
+                <img src="admin.jpeg" alt="School Administration" style="width: 100%; height: 100%; object-fit: cover;"
+                    loading="eager">
+                <div
+                    style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(26, 57, 35, 0.9), transparent); padding: 3rem 2rem; color: white; text-align: center;">
+                    <h1 style="color: white; margin-bottom: 0.5rem;">About Gichuru Memorial Senior School</h1>
+                    <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto; opacity: 0.9;">
+                        A legacy of excellence in education, character formation, and community service
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main style="padding-top: var(--header-height);">
+    <!-- School History -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2>Our History</h2>
+                    <p>
+                        Gichuru Memorial High School was established in 1982 by the local community. Its aim was to
+                        absorb children who did not get admission to the then established secondary school, from the
+                        three primary schools in the area at that time; namely Gicharani, Gikambura and Mai-a-ihii
+                        primary schools.
+                    </p>
+                    <p>
+                        It was first located as an annex in Gicharani primary school until growth in numbers required
+                        of it to seek more land which was available in Gikambura primary school in 1986. The school is
+                        on the same land to date. The school is named after a former defense minister who hailed from
+                        the area.
+                    </p>
+                </div>
 
-        <!-- Page Header -->
-        <section class="section-padding text-center"
-            style="background: linear-gradient(180deg, rgba(30,58,138,0.05) 0%, rgba(255,255,255,0) 100%);">
-            <div class="container">
-                <h1 style="font-size: 3rem; margin-bottom: 1rem;">From Nakuru to Nationwide</h1>
-                <p style="font-size: 1.25rem; color: var(--color-text-muted); max-width: 700px; margin: 0 auto;">
-                    We didn't just build a factory. We built a promise to keep Kenya's water safe.
+                <div class="card">
+                    <h2>Our Vision & Mission</h2>
+                    <h3 class="text-primary" style="font-size: 1.25rem; margin-top: 1.5rem;">Vision</h3>
+                    <p
+                        style="font-style: italic; color: var(--primary-green); font-weight: 500; margin-bottom: 0.5rem;">
+                        "To provide quality holistic education for self reliance"
+                    </p>
+                    <p style="font-size: 0.95rem; color: #666; margin-bottom: 1.5rem;">
+                        Our vision, born on ideals that the school was build on.
+                    </p>
+
+                    <h3 class="text-primary" style="font-size: 1.25rem; margin-top: 1.5rem;">Mission</h3>
+                    <p style="font-style: italic; color: var(--primary-green); font-weight: 500;">
+                        "To offer, promote and sustain quality education, identify and develop abilities and talents for
+                        the benefit of the individual and society, in order to cope with challenges of the ever changing
+                        world"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Team -->
+    <section id="management" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2">The Management</h2>
+            <p class="text-center mb-4" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                The school is managed by eighteen Board of Management (BOM) members appointed by the Minister of
+                Education.
+                The secretary to the Board is the Principal who is the chief executive.
+            </p>
+
+            <!-- BOM Table -->
+            <h3 class="mb-2">Board of Management (BOM) Members</h3>
+            <div class="tender-table-wrapper mb-4">
+                <table class="tender-table">
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Name</th>
+                            <th>ID NO.</th>
+                            <th>Area Representing</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Mr. Josphat Kamau Githuku</td>
+                            <td>8574681</td>
+                            <td>Special interest group</td>
+                            <td>BOM Chair/Exec’/ Bank signatory/SIC</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Mr. Samuel Mugo Njoroge</td>
+                            <td></td>
+                            <td>Special needs</td>
+                            <td>SIC Member</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Mr. Jeremiah S. M.</td>
+                            <td>7374240</td>
+                            <td>Secretary</td>
+                            <td>Principal/Exec’ /Bank signatory/SIC</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Ms. Caroline Wanjiku Kibui</td>
+                            <td>26807459</td>
+                            <td>P. A. (Co-opted)</td>
+                            <td>PA Chair/Exec’ /Bank signatory/SIC</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Rev. Stephen Ngugi</td>
+                            <td>20976930</td>
+                            <td>P. A. (Co-opted)</td>
+                            <td>PA Vice Chair</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Mrs. Keziah Wambui</td>
+                            <td>29045585</td>
+                            <td>P. A. (Co-opted)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Mrs. Serah Wanjiku Thuku</td>
+                            <td>11101185</td>
+                            <td>P.A& Comm rep</td>
+                            <td>Exec’/Bank signatory</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Mr. Paul Gitau Gachihi</td>
+                            <td>11631012</td>
+                            <td>P.A& Comm rep</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Susan Mburu</td>
+                            <td>10123154</td>
+                            <td>P.A& Comm rep</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Ms. Jane Wambui Ngochi</td>
+                            <td>10975668</td>
+                            <td>P.A& Comm rep</td>
+                            <td>BOM Vice Chairlady</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Mr. Daniel Mungai Nduati</td>
+                            <td>11770197</td>
+                            <td>P.A& Comm rep</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Mr. Morgan M. Kinuthia</td>
+                            <td>13031078</td>
+                            <td>P.A& Comm rep</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>Mrs. Gladys Wanjiru Gituku</td>
+                            <td>0347499</td>
+                            <td>Sponsor</td>
+                            <td>SIC Member</td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>Mr. Richard W. Muhindi</td>
+                            <td>5337079</td>
+                            <td>Sponsor</td>
+                            <td>Executive Member</td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td>Ms. Margaret Ng’endo Kago</td>
+                            <td></td>
+                            <td>Sponsor</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16.</td>
+                            <td>Mrs. Anne Gidali</td>
+                            <td>7035790</td>
+                            <td>Teachers’ rep’</td>
+                            <td>Deputy Principal</td>
+                        </tr>
+                        <tr>
+                            <td>17.</td>
+                            <td>Mr. Benedict Kigera Njenga</td>
+                            <td>N/A</td>
+                            <td>Student rep’</td>
+                            <td>Form 4</td>
+                        </tr>
+                        <tr>
+                            <td>18.</td>
+                            <td>Rev. Dr. W. C. Kogo</td>
+                            <td>2304438</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- PA Executive Table -->
+            <h3 class="mb-2">PA Executive Members</h3>
+            <div class="tender-table-wrapper mb-2">
+                <table class="tender-table" style="font-size: 0.95rem;">
+                    <thead>
+                        <tr>
+                            <th>S/No</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Student's Name & Adm No</th>
+                            <th>ID No.</th>
+                            <th>Tel. No.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Keziah Wambui</td>
+                            <td>Form 2 class rep’</td>
+                            <td>Johnson Mwaura - 2988</td>
+                            <td>29045585</td>
+                            <td>0718262017</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Thomas Ndung’u</td>
+                            <td>Form 2 class rep’</td>
+                            <td>Hannah Njeri - 3017</td>
+                            <td>13535058</td>
+                            <td>0710610819</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Caroline Wanjiku Kibui</td>
+                            <td>Form 2 class rep’</td>
+                            <td>Shila Nyambura - 2984</td>
+                            <td>26807459</td>
+                            <td>0721289548</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Rev. Stephen Ngugi</td>
+                            <td>Form 3 class rep’</td>
+                            <td>Kelvin Kamore - 2832</td>
+                            <td>20976930</td>
+                            <td>0723470589</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>John Mungai</td>
+                            <td>Form 3 class rep’</td>
+                            <td>Mary Nyaguthii - 2808</td>
+                            <td>4313470</td>
+                            <td>0712439133</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Zipporah Wairimu</td>
+                            <td>Form 3 class rep’</td>
+                            <td>Brian Kiongo - 2846</td>
+                            <td>4511233</td>
+                            <td>0707326090</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Esther Wairimu</td>
+                            <td>Form 4 class rep’</td>
+                            <td>Stanley Karanja - 2724</td>
+                            <td>10045141</td>
+                            <td>0717049058</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Susan Muthoni</td>
+                            <td>Form 4 class rep’</td>
+                            <td>Joy Nyambura - 2730</td>
+                            <td>13216399</td>
+                            <td>0716018186</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Faith Waithera</td>
+                            <td>Form 4 class rep’</td>
+                            <td>Maureen Wangari - 3076</td>
+                            <td>11106268</td>
+                            <td>0723040585</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card mb-4" style="padding: 1.5rem; background: var(--cloud-blue);">
+                <ul
+                    style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <li><strong>Caroline Wanjiku Kibui:</strong> Chairperson</li>
+                    <li><strong>Rev. Stephen Ngugi:</strong> ViceChairperson</li>
+                    <li><strong>Keziah Wambui:</strong> P. A. (Co-opted) member</li>
+                </ul>
+            </div>
+
+            <!-- Staff Profile Table -->
+            <h3 class="mb-2">School Staff Profile</h3>
+
+            <h4 class="mb-1" style="color: var(--primary-green); font-size: 1.1rem;">Teaching Staff Profile</h4>
+            <p style="font-size: 0.95rem; margin-bottom: 1rem;">Gichuru Memorial High school has 25 trained teachers.
+                Their personal details and department in which they work is as follows:-</p>
+            <div class="tender-table-wrapper mb-4">
+                <table class="tender-table" style="font-size: 0.9rem;">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Member</th>
+                            <th>Qualifications</th>
+                            <th>Special Duties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Languages -->
+                        <tr>
+                            <td rowspan="8"><strong>LANGUAGES</strong></td>
+                            <td>Mrs. Jane W. Irungu</td>
+                            <td>Graduate</td>
+                            <td>HOD Languages</td>
+                        </tr>
+                        <tr>
+                            <td>Mrs. Gidali Anne</td>
+                            <td>Graduate</td>
+                            <td>Deputy Principal</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Doreen Banja</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Yabesh M. Nyabaga</td>
+                            <td>Graduate</td>
+                            <td>HOD Journalism club</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Calvince Okoth</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mrs. Bosire T. B.</td>
+                            <td>Graduate</td>
+                            <td>HOS Kiswahili</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Jacinta K. Kiio</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Kuria John</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <!-- Science -->
+                        <tr>
+                            <td rowspan="3"><strong>SCIENCE</strong></td>
+                            <td>Mrs. Grace N. Kung'u</td>
+                            <td>Graduate</td>
+                            <td>HOD Science</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Paul G. Githucha</td>
+                            <td>Graduate</td>
+                            <td>Patron Red Cross</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Beryl Adhiambo</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <!-- Math -->
+                        <tr>
+                            <td rowspan="5"><strong>MATHEMATICS</strong></td>
+                            <td>Mr. Ng'ang'a G. K.</td>
+                            <td>Graduate</td>
+                            <td>HOD Maths/Academic committee</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Edward E. Muturi</td>
+                            <td>Graduate</td>
+                            <td>Games Master</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Muthea J. N.</td>
+                            <td>Graduate</td>
+                            <td>Patron Scouts/Wildlife</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Samuel Kamau</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Mwaura G. N.</td>
+                            <td>Graduate</td>
+                            <td>Patron YCS</td>
+                        </tr>
+                        <!-- Humanities -->
+                        <tr>
+                            <td rowspan="7"><strong>HUMANITIES</strong></td>
+                            <td>Mr. Jeremiah S. M.</td>
+                            <td>Graduate</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Onkoba G. M.</td>
+                            <td>Graduate</td>
+                            <td>Dean of studies</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Irene N. Wamwea</td>
+                            <td>Graduate</td>
+                            <td>HOD Humanities</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Jacinta K. Kiio</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Kuria John</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Getrude Chepngetich</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Elizabeth M. Kamau</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                        <!-- Counseling -->
+                        <tr>
+                            <td><strong>GUIDANCE & C</strong></td>
+                            <td>Mrs. Jane K. Muriuki</td>
+                            <td>Graduate</td>
+                            <td>Patron CU / HOD G & Counselling</td>
+                        </tr>
+                        <!-- Applied -->
+                        <tr>
+                            <td rowspan="3"><strong>APPLIED SCIENCE/ CLUBS & SOCIETIES</strong></td>
+                            <td>Mrs. Lydia W. Ngugi</td>
+                            <td>Graduate</td>
+                            <td>HOD Applied science/Clubs & Societies</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Teresa Chebeni</td>
+                            <td>Graduate</td>
+                            <td>HOD Business studies</td>
+                        </tr>
+                        <tr>
+                            <td>Ms. Monicah Wangechi</td>
+                            <td>Graduate</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mb-1" style="color: var(--primary-green); font-size: 1.1rem;">Support Staff Profile</h4>
+            <div class="tender-table-wrapper mb-4">
+                <table class="tender-table" style="font-size: 0.9rem;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Qualifications</th>
+                            <th>Duties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Muritu</td>
+                            <td>Male</td>
+                            <td>CPA</td>
+                            <td>Maintain books of accounts</td>
+                        </tr>
+                        <tr>
+                            <td>Caroline Wangeci</td>
+                            <td>Female</td>
+                            <td>Graduate</td>
+                            <td>School secretary</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Wanjiru</td>
+                            <td>Female</td>
+                            <td>Graduate</td>
+                            <td>Storekeeper/secretary</td>
+                        </tr>
+                        <tr>
+                            <td>Phillip Kinyanjui</td>
+                            <td>Male</td>
+                            <td>Graduate</td>
+                            <td>Laboratory assistant</td>
+                        </tr>
+                        <tr>
+                            <td>Leah Wanjiku</td>
+                            <td>Female</td>
+                            <td>Certificate in catering</td>
+                            <td>Cateress</td>
+                        </tr>
+                        <tr>
+                            <td>Martin Njuguna</td>
+                            <td>Male</td>
+                            <td>KCPE</td>
+                            <td>Cook</td>
+                        </tr>
+                        <tr>
+                            <td>Kennedy Mugo</td>
+                            <td>Male</td>
+                            <td>KCPE</td>
+                            <td>Groundsman</td>
+                        </tr>
+                        <tr>
+                            <td>Peter Nduwayezu</td>
+                            <td>Male</td>
+                            <td></td>
+                            <td>Watchman</td>
+                        </tr>
+                        <tr>
+                            <td>Peter Nyambane</td>
+                            <td>Male</td>
+                            <td></td>
+                            <td>Watchman</td>
+                        </tr>
+                        <tr>
+                            <td>Jean Nzinsabira</td>
+                            <td>Male</td>
+                            <td></td>
+                            <td>Watchman</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Chapel -->
+    <section id="chapel" class="section">
+        <div class="container">
+            <div class="card" style="max-width: 900px; margin: 0 auto;">
+                <h2 class="text-center">The Chapel - Spiritual Life</h2>
+                <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">
+                    Nurturing the spiritual dimension of our students
                 </p>
-            </div>
-        </section>
 
-        <!-- Delivery Image Wide Card -->
-        <section class="section-padding" style="padding-bottom: 0;">
-            <div class="container">
-                <div class="glass-card" style="padding: 2rem; overflow: hidden; text-align: center;">
-                    <h2 class="section-title" style="margin-bottom: 1.5rem;">Across Kenya</h2>
-                    <img src="delivery.jpg" alt="Nationwide Delivery"
-                        style="width: 70%; height: auto; margin: 0 auto; border-radius: 12px; display: block;">
-                </div>
-            </div>
-        </section>
-
-        <!-- Founding Story -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="glass-card" style="padding: 0; overflow: hidden;">
-                    <div class="grid-2" style="gap: 0; align-items: stretch;">
-                        <div style="padding: 3rem;">
-                            <h2 class="section-title mb-3" style="margin-bottom: 1.5rem;">The <span
-                                    class="text-primary">2023</span> Genesis</h2>
-                            <p style="margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.8;">
-                                Founded in 2023 during a severe regional drought, Amani Sewak Plastics began with a
-                                simple yet critical mission: <strong class="text-primary">to provide reliable water
-                                    storage solutions to our Nakuru community.</strong>
-                            </p>
-                            <p style="margin-bottom: 1rem;">
-                                What started as a small workshop supplying tanks to local farmers has rapidly grown into
-                                a trusted national brand. We observed that many tanks in the market were cracking under
-                                the Rift Valley sun. We vowed to change that.
-                            </p>
-                            <p
-                                style="font-style: italic; border-left: 4px solid var(--color-red-accent); padding-left: 1rem; color: var(--color-text-muted);">
-                                "We treat every tank like it's going to our own mother's farm. Quality isn't optional;
-                                it's our survival."
-                                <br><span
-                                    style="font-size: 0.9rem; font-weight: 600; margin-top: 0.5rem; display: block;">—
-                                    Founder's Vision</span>
-                            </p>
-                        </div>
-                        <div style="position: relative; min-height: 400px; overflow: hidden;">
-                            <img src="First Factory.jpg" alt="First Factory 2023"
-                                style="position: absolute; top: 50%; left: 50%; width: 150%; height: 150%; object-fit: cover; transform: translate(-50%, -50%) rotate(-90deg);">
-                        </div>
+                <div class="grid grid-2">
+                    <div>
+                        <h3>Our Spiritual Foundation</h3>
+                        <p>
+                            At Gichuru Memorial, we recognize that education extends beyond academics. Our
+                            chapel
+                            serves as the spiritual heart of the school, where students gather for worship,
+                            reflection,
+                            and spiritual growth.
+                        </p>
+                        <p>
+                            We respect and celebrate diversity while maintaining our Christian foundation.
+                            Students
+                            of all faiths are welcome and encouraged to practice their beliefs in an atmosphere
+                            of
+                            mutual respect and understanding.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Team Image Wide Card -->
-        <section class="section-padding" style="padding-top: 0;">
-            <div class="container">
-                <div class="glass-card" style="padding: 2rem; overflow: hidden; text-align: center;">
-                    <h2 class="section-title" style="margin-bottom: 1.5rem;">Our Team!</h2>
-                    <img src="team.jpg" alt="Amani Sewak Team"
-                        style="width: 100%; height: auto; border-radius: 12px; display: block;">
-                </div>
-            </div>
-        </section>
-
-        <!-- Mission & Vision -->
-        <section class="section-padding bg-white">
-            <div class="container">
-                <div class="grid-2">
-                    <div class="glass-panel"
-                        style="padding: 2.5rem; border-top: 5px solid var(--color-blue-corporate);">
-                        <h3 style="margin-bottom: 1rem;">Our Mission</h3>
-                        <p style="font-size: 1.1rem;">To provide every Kenyan household and business with <strong
-                                class="text-primary">durable, affordable water storage solutions</strong> that stand the
-                            test of time and elements.</p>
-                    </div>
-                    <div class="glass-panel" style="padding: 2.5rem; border-top: 5px solid var(--color-green-eco);">
-                        <h3 style="margin-bottom: 1rem;">Our Vision</h3>
-                        <p style="font-size: 1.1rem;">To become East Africa's most trusted name in water management
-                            solutions by <strong class="text-eco">2030</strong>.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Values -->
-        <section class="section-padding">
-            <div class="container text-center">
-                <h2 class="section-title" style="margin-bottom: 3rem;">Our Core Values</h2>
-                <div class="grid-3">
-                    <div class="glass-card" style="padding: 2rem;">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">⭐</div>
-                        <h4>Quality First</h4>
-                        <p class="text-muted">We never compromise on materials. 100% Virgin Polymer, always.</p>
-                    </div>
-                    <div class="glass-card" style="padding: 2rem;">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
-                        <h4>Community Rooted</h4>
-                        <p class="text-muted">We grow when our communities thrive. We hire local and support local.</p>
-                    </div>
-                    <div class="glass-card" style="padding: 2rem;">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
-                        <h4>Innovation Driven</h4>
-                        <p class="text-muted">Better solutions for Kenyan challenges. Constant R&D on UV protection.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Placeholder -->
-        <section class="section-padding bg-white">
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 3rem;">Meet Leadership</h2>
-                <div class="grid-4">
-                    <div class="text-center">
-                        <div
-                            style="width: 150px; height: 150px; background: #e5e5e5; border-radius: 50%; margin: 0 auto 1rem;">
-                        </div>
-                        <h5>Founder Name</h5>
-                        <p class="text-xs text-muted">Managing Director</p>
-                    </div>
-                    <div class="text-center">
-                        <div
-                            style="width: 150px; height: 150px; background: #e5e5e5; border-radius: 50%; margin: 0 auto 1rem;">
-                        </div>
-                        <h5>Director Name</h5>
-                        <p class="text-xs text-muted">Operations Head</p>
-                    </div>
-                    <div class="text-center">
-                        <div
-                            style="width: 150px; height: 150px; background: #e5e5e5; border-radius: 50%; margin: 0 auto 1rem;">
-                        </div>
-                        <h5>Manager Name</h5>
-                        <p class="text-xs text-muted">Sales Lead</p>
-                    </div>
-                    <div class="text-center">
-                        <div
-                            style="width: 150px; height: 150px; background: #e5e5e5; border-radius: 50%; margin: 0 auto 1rem;">
-                        </div>
-                        <h5>Expert Name</h5>
-                        <p class="text-xs text-muted">Lead Engineer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer (Identical to Index) -->
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>Amani Sewak Plastics</h3>
-                <p>Engineered for the Rift Valley. Built for Kenya.<br>Premium Water Storage Solutions since 2023.</p>
-            </div>
-
-            <div class="footer-col footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="products.html">Domestic Tanks</a></li>
-                    <li><a href="products.html">Commercial Tanks</a></li>
-                    <li><a href="products.html">Custom Solutions</a></li>
-                    <li><a href="contact.html">Careers</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col footer-links">
-                <h4>Customer Care</h4>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#delivery">Delivery Info</a></li>
-                    <li><a href="#warranty">Warranty Claims</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <ul style="opacity: 0.8; font-size: 0.9rem;">
-                    <li style="margin-bottom: 0.5rem;">Direct Office: 0735 902222 / 0736 902222</li>
-                    <li style="margin-bottom: 0.5rem;">0733 902222 (General)</li>
-                    <li style="margin-bottom: 0.5rem;">sales@sewakltd.com</li>
-                    <li>Nakuru, Kenya</li>
-                </ul>
-
-                <div style="margin-top: 1.5rem;">
-                    <h5 style="margin-bottom: 0.5rem; font-size: 0.9rem;">Follow Us</h5>
-                    <div class="social-links">
-                        <!-- Facebook -->
-                        <a href="https://web.facebook.com/profile.php?id=61588636942695" aria-label="Facebook"
-                            class="social-icon facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                            </svg>
-                        </a>
-                        <!-- TikTok -->
-                        <a href="https://www.tiktok.com/@amanisewakplastics" aria-label="TikTok"
-                            class="social-icon tiktok">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 2.52-1.12 4.88-3.11 6.24-2.12 1.45-4.78 1.84-7.23 1.05-2.34-.74-4.22-2.58-5.14-4.88-1.53-3.83.67-8.16 4.79-9.17 1.05-.26 2.13-.25 3.19-.06v4c-.21-.06-.42-.11-.64-.13-.93-.11-1.87.14-2.61.73-.83.63-1.16 1.7-.87 2.71.21.75.76 1.37 1.47 1.68.83.37 1.83.32 2.61-.22.69-.47 1.09-1.3 1.08-2.14v-14.07z" />
-                            </svg>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/amanisewakplastics/" aria-label="Instagram"
-                            class="social-icon instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg>
-                        </a>
-
+                    <div>
+                        <h3>Chapel Activities</h3>
+                        <ul>
+                            <li>Weekly worship services</li>
+                            <li>Morning devotions</li>
+                            <li>Christian Union meetings</li>
+                            <li>Spiritual counseling and guidance</li>
+                            <li>Community outreach programs</li>
+                            <li>Special celebrations and events</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">
+                            Through these activities, we aim to develop students who are not only academically
+                            excellent but also spiritually grounded and morally upright.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Amani Sewak Plastics Limited. All Rights Reserved.</p>
+    <!-- Photo Gallery -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2">Photo Gallery</h2>
+            <p class="text-center mb-2">Capturing moments of excellence and achievement</p>
+
+            <div class="grid grid-4">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="campus.jpeg" alt="School Campus" style="width: 100%; height: 200px; object-fit: cover;"
+                        loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h4>School Campus</h4>
+                        <p style="font-size: 0.875rem;">Our beautiful learning environment</p>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="learning.jpeg" alt="Students in Class"
+                        style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h4>Learning in Progress</h4>
+                        <p style="font-size: 0.875rem;">Engaged students in the classroom</p>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="sports.png" alt="Sports Day" style="width: 100%; height: 200px; object-fit: cover;"
+                        loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h4>Sports & Games</h4>
+                        <p style="font-size: 0.875rem;">Excellence beyond the classroom</p>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="events.jpeg" alt="School Events" style="width: 100%; height: 200px; object-fit: cover;"
+                        loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h4>School Events</h4>
+                        <p style="font-size: 0.875rem;">Celebrating achievements together</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Gichuru Memorial Logo" class="footer-logo">
+                    <h3>Gichuru Memorial Senior School</h3>
+                    <p>P.O Box 459-00902, Kikuyu</p>
+                    <p>Tel: 0790-268040</p>
+                    <p>Email: gichurumemo@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="departments.html">Departments</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="finance.html">Tenders</a>
+                    <a href="finance.html#fees">Fee Payment</a>
+                    <a href="finance.html#donate">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="X (Twitter)">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gichuru Memorial Senior School. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/254733902222" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-        <span class="notification-dot"></span>
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-            <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-        </svg>
-    </a>
+    <!-- WhatsApp Floating Button -->
 
-    <script src="app.js"></script>
+
+    <!-- Scripts -->
+    <script src="mobile-menu.js"></script>
+    <script src="animations.js"></script>
 </body>
 
 </html>
